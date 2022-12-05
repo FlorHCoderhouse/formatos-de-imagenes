@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #fed41d;
+    text-align: center;
+    padding: 15px;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.marca {
+    font-family: 'Dancing Script', cursive;
+    font-size: 45px;
+    color: #f14e28;
+}
+
+.gridContainer {
+    max-width: 1000px;
+    padding: 1rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(10, 250px);
+    gap: 1rem;
+}
+
+.item-a {
+    grid-column: 1/ span 3;
+}
+
+.item-b {
+
+    grid-area: 2/1/4/3;
+}
+
+.item-c {
+    grid-column: 3/6;
+    grid-row:7/9;
+}
+
+.item-d {
+    grid-area: 5/1/7/6;  
+}
+
+.item-e {
+    grid-area: 3/5/5/6;
+}
+
+.item-f{
+    grid-area: 8/1/9/3
+}
+
+.item-g{
+    grid-area: 2/4/3/6;
+}
+
+.item-h{
+    grid-area: 9/2/10/4;
+}
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.item-i{
+    grid-area: 4/3/5/5;
+}
+
+div {
+    position: relative;
+}
+
+.icons {
+    width: 100%;
+    position: absolute;
+    bottom:15px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icons i,
+.icons span {
+    color:white;
+    font-size:20px;
+    line-height: 10px;
+}
+
+.icons span{
+    font-size:16px;
+}
+
+/* .flexModificado .icons{
+    justify-content: space-around;
+    max-width:50%;
+}
+
+.padre{
+    display: flex;
+    justify-content: center;
+}
+
+.imgBlog{
+    max-width:300px;
+}
+
+.hijo{
+    margin-left: 15px;
+} */
